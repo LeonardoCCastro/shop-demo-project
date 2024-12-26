@@ -1,0 +1,1564 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapada Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+
+<body>
+    <header>
+        <nav class="bg-white dark:bg-gray-800 antialiased">
+            <div class="max-w-screen-xl px-4 mx-auto 2xl:px-0 py-4">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-8">
+                        <div class="shrink-0">
+                            <a href="#" title="" class="">
+                                <img class="block w-auto h-8 dark:hidden"
+                                    src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/logo-full.svg" alt="">
+                                <img class="hidden w-auto h-8 dark:block"
+                                    src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/logo-full-dark.svg" alt="">
+                            </a>
+                        </div>
+
+                        <ul class="hidden lg:flex items-center justify-start gap-6 md:gap-8 py-3 sm:justify-center">
+                            <li>
+                                <a href="/index.html" title=""
+                                    class="flex text-sm font-medium text-gray-900 hover:text-blue-700 dark:text-white dark:hover:text-blue-500">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="shrink-0">
+                                <a href="/product-listing.html" title=""
+                                    class="flex text-sm font-medium text-gray-900 hover:text-blue-700 dark:text-white dark:hover:text-blue-500">
+                                    Best Sellers
+                                </a>
+                            </li>
+                            <li class="shrink-0">
+                                <a href="/product-listing.html" title=""
+                                    class="flex text-sm font-medium text-gray-900 hover:text-blue-700 dark:text-white dark:hover:text-blue-500">
+                                    Gift Ideas
+                                </a>
+                            </li>
+                            <li class="shrink-0">
+                                <a href="/product-listing.html" title=""
+                                    class="text-sm font-medium text-gray-900 hover:text-blue-700 dark:text-white dark:hover:text-blue-500">
+                                    Today's Deals
+                                </a>
+                            </li>
+                            <li class="shrink-0">
+                                <a href="/contact-us.html" title=""
+                                    class="text-sm font-medium text-gray-900 hover:text-blue-700 dark:text-white dark:hover:text-blue-500">
+                                    Sell
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="flex items-center lg:space-x-2">
+
+                        <button id="myCartDropdownButton1" data-dropdown-toggle="myCartDropdown1" type="button"
+                            class="inline-flex items-center rounded-lg justify-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700 text-sm font-medium leading-none text-gray-900 dark:text-white">
+                            <span class="sr-only">
+                                Cart
+                            </span>
+                            <svg class="w-5 h-5 lg:me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312" />
+                            </svg>
+                            <span class="hidden sm:flex">My Cart</span>
+                            <svg class="hidden sm:flex w-4 h-4 text-gray-900 dark:text-white ms-1" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m19 9-7 7-7-7" />
+                            </svg>
+                        </button>
+
+                        <div id="myCartDropdown1"
+                            class="hidden z-10 mx-auto max-w-sm space-y-4 overflow-hidden rounded-lg bg-white p-4 antialiased shadow-lg dark:bg-gray-800">
+                            <div class="grid grid-cols-2">
+                                <div>
+                                    <a href="#"
+                                        class="truncate text-sm font-semibold leading-none text-gray-900 dark:text-white hover:underline">Apple
+                                        iPhone 15</a>
+                                    <p class="mt-0.5 truncate text-sm font-normal text-gray-500 dark:text-gray-400">$599
+                                    </p>
+                                </div>
+
+                                <div class="flex items-center justify-end gap-6">
+                                    <p class="text-sm font-normal leading-none text-gray-500 dark:text-gray-400">Qty: 1
+                                    </p>
+
+                                    <button data-tooltip-target="tooltipRemoveItem1a" type="button"
+                                        class="text-red-600 hover:text-red-700 dark:text-red-500 dark:hover:text-red-600">
+                                        <span class="sr-only"> Remove </span>
+                                        <svg class="h-4 w-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                            fill="currentColor" viewBox="0 0 24 24">
+                                            <path fill-rule="evenodd"
+                                                d="M2 12a10 10 0 1 1 20 0 10 10 0 0 1-20 0Zm7.7-3.7a1 1 0 0 0-1.4 1.4l2.3 2.3-2.3 2.3a1 1 0 1 0 1.4 1.4l2.3-2.3 2.3 2.3a1 1 0 0 0 1.4-1.4L13.4 12l2.3-2.3a1 1 0 0 0-1.4-1.4L12 10.6 9.7 8.3Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
+                                    <div id="tooltipRemoveItem1a" role="tooltip"
+                                        class="tooltip invisible absolute z-10 inline-block rounded-lg bg-gray-900 px-3 py-2 text-sm font-medium text-white opacity-0 shadow-sm transition-opacity duration-300 dark:bg-gray-700">
+                                        Remove item
+                                        <div class="tooltip-arrow" data-popper-arrow></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-2">
+                                <div>
+                                    <a href="#"
+                                        class="truncate text-sm font-semibold leading-none text-gray-900 dark:text-white hover:underline">Apple
+                                        iPad Air</a>
+                                    <p class="mt-0.5 truncate text-sm font-normal text-gray-500 dark:text-gray-400">$499
+                                    </p>
+                                </div>
+
+                                <div class="flex items-center justify-end gap-6">
+                                    <p class="text-sm font-normal leading-none text-gray-500 dark:text-gray-400">Qty: 1
+                                    </p>
+
+                                    <button data-tooltip-target="tooltipRemoveItem2a" type="button"
+                                        class="text-red-600 hover:text-red-700 dark:text-red-500 dark:hover:text-red-600">
+                                        <span class="sr-only"> Remove </span>
+                                        <svg class="h-4 w-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                            fill="currentColor" viewBox="0 0 24 24">
+                                            <path fill-rule="evenodd"
+                                                d="M2 12a10 10 0 1 1 20 0 10 10 0 0 1-20 0Zm7.7-3.7a1 1 0 0 0-1.4 1.4l2.3 2.3-2.3 2.3a1 1 0 1 0 1.4 1.4l2.3-2.3 2.3 2.3a1 1 0 0 0 1.4-1.4L13.4 12l2.3-2.3a1 1 0 0 0-1.4-1.4L12 10.6 9.7 8.3Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
+                                    <div id="tooltipRemoveItem2a" role="tooltip"
+                                        class="tooltip invisible absolute z-10 inline-block rounded-lg bg-gray-900 px-3 py-2 text-sm font-medium text-white opacity-0 shadow-sm transition-opacity duration-300 dark:bg-gray-700">
+                                        Remove item
+                                        <div class="tooltip-arrow" data-popper-arrow></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-2">
+                                <div>
+                                    <a href="#"
+                                        class="truncate text-sm font-semibold leading-none text-gray-900 dark:text-white hover:underline">Apple
+                                        Watch SE</a>
+                                    <p class="mt-0.5 truncate text-sm font-normal text-gray-500 dark:text-gray-400">$598
+                                    </p>
+                                </div>
+
+                                <div class="flex items-center justify-end gap-6">
+                                    <p class="text-sm font-normal leading-none text-gray-500 dark:text-gray-400">Qty: 2
+                                    </p>
+
+                                    <button data-tooltip-target="tooltipRemoveItem3b" type="button"
+                                        class="text-red-600 hover:text-red-700 dark:text-red-500 dark:hover:text-red-600">
+                                        <span class="sr-only"> Remove </span>
+                                        <svg class="h-4 w-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                            fill="currentColor" viewBox="0 0 24 24">
+                                            <path fill-rule="evenodd"
+                                                d="M2 12a10 10 0 1 1 20 0 10 10 0 0 1-20 0Zm7.7-3.7a1 1 0 0 0-1.4 1.4l2.3 2.3-2.3 2.3a1 1 0 1 0 1.4 1.4l2.3-2.3 2.3 2.3a1 1 0 0 0 1.4-1.4L13.4 12l2.3-2.3a1 1 0 0 0-1.4-1.4L12 10.6 9.7 8.3Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
+                                    <div id="tooltipRemoveItem3b" role="tooltip"
+                                        class="tooltip invisible absolute z-10 inline-block rounded-lg bg-gray-900 px-3 py-2 text-sm font-medium text-white opacity-0 shadow-sm transition-opacity duration-300 dark:bg-gray-700">
+                                        Remove item
+                                        <div class="tooltip-arrow" data-popper-arrow></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-2">
+                                <div>
+                                    <a href="#"
+                                        class="truncate text-sm font-semibold leading-none text-gray-900 dark:text-white hover:underline">Sony
+                                        Playstation 5</a>
+                                    <p class="mt-0.5 truncate text-sm font-normal text-gray-500 dark:text-gray-400">$799
+                                    </p>
+                                </div>
+
+                                <div class="flex items-center justify-end gap-6">
+                                    <p class="text-sm font-normal leading-none text-gray-500 dark:text-gray-400">Qty: 1
+                                    </p>
+
+                                    <button data-tooltip-target="tooltipRemoveItem4b" type="button"
+                                        class="text-red-600 hover:text-red-700 dark:text-red-500 dark:hover:text-red-600">
+                                        <span class="sr-only"> Remove </span>
+                                        <svg class="h-4 w-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                            fill="currentColor" viewBox="0 0 24 24">
+                                            <path fill-rule="evenodd"
+                                                d="M2 12a10 10 0 1 1 20 0 10 10 0 0 1-20 0Zm7.7-3.7a1 1 0 0 0-1.4 1.4l2.3 2.3-2.3 2.3a1 1 0 1 0 1.4 1.4l2.3-2.3 2.3 2.3a1 1 0 0 0 1.4-1.4L13.4 12l2.3-2.3a1 1 0 0 0-1.4-1.4L12 10.6 9.7 8.3Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
+                                    <div id="tooltipRemoveItem4b" role="tooltip"
+                                        class="tooltip invisible absolute z-10 inline-block rounded-lg bg-gray-900 px-3 py-2 text-sm font-medium text-white opacity-0 shadow-sm transition-opacity duration-300 dark:bg-gray-700">
+                                        Remove item
+                                        <div class="tooltip-arrow" data-popper-arrow></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-2">
+                                <div>
+                                    <a href="#"
+                                        class="truncate text-sm font-semibold leading-none text-gray-900 dark:text-white hover:underline">Apple
+                                        iMac 20"</a>
+                                    <p class="mt-0.5 truncate text-sm font-normal text-gray-500 dark:text-gray-400">
+                                        $8,997</p>
+                                </div>
+
+                                <div class="flex items-center justify-end gap-6">
+                                    <p class="text-sm font-normal leading-none text-gray-500 dark:text-gray-400">Qty: 3
+                                    </p>
+
+                                    <button data-tooltip-target="tooltipRemoveItem5b" type="button"
+                                        class="text-red-600 hover:text-red-700 dark:text-red-500 dark:hover:text-red-600">
+                                        <span class="sr-only"> Remove </span>
+                                        <svg class="h-4 w-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                            fill="currentColor" viewBox="0 0 24 24">
+                                            <path fill-rule="evenodd"
+                                                d="M2 12a10 10 0 1 1 20 0 10 10 0 0 1-20 0Zm7.7-3.7a1 1 0 0 0-1.4 1.4l2.3 2.3-2.3 2.3a1 1 0 1 0 1.4 1.4l2.3-2.3 2.3 2.3a1 1 0 0 0 1.4-1.4L13.4 12l2.3-2.3a1 1 0 0 0-1.4-1.4L12 10.6 9.7 8.3Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
+                                    <div id="tooltipRemoveItem5b" role="tooltip"
+                                        class="tooltip invisible absolute z-10 inline-block rounded-lg bg-gray-900 px-3 py-2 text-sm font-medium text-white opacity-0 shadow-sm transition-opacity duration-300 dark:bg-gray-700">
+                                        Remove item
+                                        <div class="tooltip-arrow" data-popper-arrow></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="/shopping-cart.html" title=""
+                                class="mb-2 me-2 inline-flex w-full items-center justify-center rounded-lg bg-blue-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                role="button"> Proceed to Checkout </a>
+                        </div>
+
+                        <button id="userDropdownButton1" data-dropdown-toggle="userDropdown1" type="button"
+                            class="inline-flex items-center rounded-lg justify-center p-2 hover:bg-gray-100 dark:hover:bg-gray-700 text-sm font-medium leading-none text-gray-900 dark:text-white">
+                            <svg class="w-5 h-5 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M7 17v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                            </svg>
+                            Account
+                            <svg class="w-4 h-4 text-gray-900 dark:text-white ms-1" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m19 9-7 7-7-7" />
+                            </svg>
+                        </button>
+
+                        <div id="userDropdown1"
+                            class="hidden z-10 w-56 divide-y divide-gray-100 overflow-hidden overflow-y-auto rounded-lg bg-white antialiased shadow dark:divide-gray-600 dark:bg-gray-700">
+                            <ul class="p-2 text-start text-sm font-medium text-gray-900 dark:text-white">
+                                <li><a href="/account-overview.html" title=""
+                                        class="inline-flex w-full items-center gap-2 rounded-md px-3 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-600">
+                                        My Account </a></li>
+                                <li><a href="#" title=""
+                                        class="inline-flex w-full items-center gap-2 rounded-md px-3 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-600">
+                                        My Orders </a></li>
+                                <li><a href="#" title=""
+                                        class="inline-flex w-full items-center gap-2 rounded-md px-3 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-600">
+                                        Settings </a></li>
+                                <li><a href="#" title=""
+                                        class="inline-flex w-full items-center gap-2 rounded-md px-3 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-600">
+                                        Favourites </a></li>
+                                <li><a href="#" title=""
+                                        class="inline-flex w-full items-center gap-2 rounded-md px-3 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-600">
+                                        Delivery Addresses </a></li>
+                                <li><a href="#" title=""
+                                        class="inline-flex w-full items-center gap-2 rounded-md px-3 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-600">
+                                        Billing Data </a></li>
+                            </ul>
+
+                            <div class="p-2 text-sm font-medium text-gray-900 dark:text-white">
+                                <a href="#" title=""
+                                    class="inline-flex w-full items-center gap-2 rounded-md px-3 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-600">
+                                    Sign Out </a>
+                            </div>
+                        </div>
+
+                        <button type="button" data-collapse-toggle="ecommerce-navbar-menu-1"
+                            aria-controls="ecommerce-navbar-menu-1" aria-expanded="false"
+                            class="inline-flex lg:hidden items-center justify-center hover:bg-gray-100 rounded-md dark:hover:bg-gray-700 p-2 text-gray-900 dark:text-white">
+                            <span class="sr-only">
+                                Open Menu
+                            </span>
+                            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
+                                    d="M5 7h14M5 12h14M5 17h14" />
+                            </svg>
+                        </button>
+
+                        <button id="theme-toggle" data-tooltip-target="tooltip-toggle" type="button"
+                            class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                            <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                            </svg>
+                            <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                    fill-rule="evenodd" clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+
+                        <div id="tooltip-toggle" role="tooltip"
+                            class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip">
+                            Toggle dark mode
+                            <div class="tooltip-arrow" data-popper-arrow></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="ecommerce-navbar-menu-1"
+                    class="bg-gray-50 dark:bg-gray-700 dark:border-gray-600 border border-gray-200 rounded-lg py-3 hidden px-4 mt-4">
+                    <ul class="text-gray-900 dark:text-white text-sm font-medium dark:text-white space-y-3">
+                        <li>
+                            <a href="#" class="hover:text-blue-700 dark:hover:text-blue-500">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-blue-700 dark:hover:text-blue-500">Best Sellers</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-blue-700 dark:hover:text-blue-500">Gift Ideas</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-blue-700 dark:hover:text-blue-500">Games</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-blue-700 dark:hover:text-blue-500">Electronics</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-blue-700 dark:hover:text-blue-500">Home & Garden</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bg-white py-8 antialiased dark:bg-gray-900 md:py-16">
+            <form action="#" class="mx-auto max-w-screen-xl px-4 2xl:px-0">
+                <h2 class="text-xl font-semibold text-gray-900 dark:text-white sm:text-2xl">Checkout</h2>
+
+                <div class="mt-6 sm:mt-8 lg:flex lg:items-start lg:gap-6">
+                    <div class="w-full space-y-4 sm:space-y-6 lg:max-w-sm xl:max-w-lg">
+                        <div
+                            class="space-y-4 rounded-lg border border-gray-200 bg-white p-4 shadow-sm dark:border-gray-700 dark:bg-gray-800 sm:p-6">
+                            <p class="text-xl font-semibold text-gray-900 dark:text-white">Billing address</p>
+
+                            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                                <div class="flex items-center gap-4 sm:col-span-2">
+                                    <div class="flex items-center">
+                                        <input checked id="individual-address" type="radio" value="" name="address-type"
+                                            class="h-4 w-4 border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600" />
+                                        <label for="individual-address"
+                                            class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                                            Individual </label>
+                                    </div>
+
+                                    <div class="flex items-center">
+                                        <input id="company-address" type="radio" value="" name="address-type"
+                                            class="h-4 w-4 border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600" />
+                                        <label for="company-address"
+                                            class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"> Company
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-span-2 grid hidden grid-cols-2 gap-4" id="company-info-container">
+                                    <div>
+                                        <label for="company_name"
+                                            class="mb-2 block text-sm font-medium text-gray-900 dark:text-white">
+                                            Company name </label>
+                                        <input type="text" id="company_name"
+                                            class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+                                            placeholder="Flowbite LLC" />
+                                    </div>
+
+                                    <div>
+                                        <label for="vat_number"
+                                            class="mb-2 block text-sm font-medium text-gray-900 dark:text-white"> VAT
+                                            number </label>
+                                        <input type="text" id="vat_number"
+                                            class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+                                            placeholder="DE42313253" />
+                                    </div>
+                                </div>
+
+                                <div class="sm:col-span-2">
+                                    <div class="mb-2 flex items-center gap-1">
+                                        <label for="saved-address"
+                                            class="block text-sm font-medium text-gray-900 dark:text-white"> Saved
+                                            Address </label>
+                                        <svg data-tooltip-target="saved-address-desc-1" data-tooltip-trigger="hover"
+                                            class="h-4 w-4 text-gray-400 hover:text-gray-900 dark:text-gray-500 dark:hover:text-white"
+                                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            fill="currentColor" viewBox="0 0 24 24">
+                                            <path fill-rule="evenodd"
+                                                d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm9.408-5.5a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2h-.01ZM10 10a1 1 0 1 0 0 2h1v3h-1a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2h-1v-4a1 1 0 0 0-1-1h-2Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </div>
+                                    <select id="saved-address"
+                                        class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500">
+                                        <option selected>Choose one of your saved address</option>
+                                        <option value="address-1">San Francisco, California, United States, 3454, Scott
+                                            Street</option>
+                                        <option value="address-2">New York, United States, Broadway 10012</option>
+                                    </select>
+                                    <div id="saved-address-desc-1" role="tooltip"
+                                        class="tooltip invisible absolute z-10 inline-block rounded-lg bg-gray-900 px-3 py-2 text-sm font-medium text-white opacity-0 shadow-sm transition-opacity duration-300 dark:bg-gray-700">
+                                        Choose one of your saved addresses
+                                        <div class="tooltip-arrow" data-popper-arrow></div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label for="first_name"
+                                        class="mb-2 block text-sm font-medium text-gray-900 dark:text-white"> First
+                                        Name* </label>
+                                    <input type="text" id="first_name"
+                                        class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+                                        placeholder="Enter your first name" required />
+                                </div>
+
+                                <div>
+                                    <label for="last_name"
+                                        class="mb-2 block text-sm font-medium text-gray-900 dark:text-white"> Last Name*
+                                    </label>
+                                    <input type="text" id="last_name"
+                                        class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+                                        placeholder="Enter your last name" required />
+                                </div>
+
+                                <div class="sm:col-span-2">
+                                    <label for="phone-input"
+                                        class="mb-2 block text-sm font-medium text-gray-900 dark:text-white"> Phone
+                                        Number* </label>
+                                    <div class="flex items-center">
+                                        <button id="dropdown-phone-button-1" data-dropdown-toggle="dropdown-phone-1"
+                                            class="z-10 inline-flex shrink-0 items-center rounded-s-lg border border-gray-300 bg-gray-100 px-4 py-2.5 text-center text-sm font-medium text-gray-900 hover:bg-gray-200 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-700"
+                                            type="button">
+                                            <svg fill="none" aria-hidden="true" class="me-2 h-4 w-4"
+                                                viewBox="0 0 20 15">
+                                                <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                                                <mask id="a" style="mask-type:luminance" width="20" height="15" x="0"
+                                                    y="0" maskUnits="userSpaceOnUse">
+                                                    <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                                                </mask>
+                                                <g mask="url(#a)">
+                                                    <path fill="#D02F44" fill-rule="evenodd"
+                                                        d="M19.6.5H0v.933h19.6V.5zm0 1.867H0V3.3h19.6v-.933zM0 4.233h19.6v.934H0v-.934zM19.6 6.1H0v.933h19.6V6.1zM0 7.967h19.6V8.9H0v-.933zm19.6 1.866H0v.934h19.6v-.934zM0 11.7h19.6v.933H0V11.7zm19.6 1.867H0v.933h19.6v-.933z"
+                                                        clip-rule="evenodd" />
+                                                    <path fill="#46467F" d="M0 .5h8.4v6.533H0z" />
+                                                    <g filter="url(#filter0_d_343_121520)">
+                                                        <path fill="url(#paint0_linear_343_121520)" fill-rule="evenodd"
+                                                            d="M1.867 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.866 0a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM7.467 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zM2.333 3.3a.467.467 0 100-.933.467.467 0 000 .933zm2.334-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.4.467a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm-2.334.466a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.466a.467.467 0 11-.933 0 .467.467 0 01.933 0zM1.4 4.233a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM6.533 4.7a.467.467 0 11-.933 0 .467.467 0 01.933 0zM7 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zM3.267 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0z"
+                                                            clip-rule="evenodd" />
+                                                    </g>
+                                                </g>
+                                                <defs>
+                                                    <linearGradient id="paint0_linear_343_121520" x1=".933" x2=".933"
+                                                        y1="1.433" y2="6.1" gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="#fff" />
+                                                        <stop offset="1" stop-color="#F0F0F0" />
+                                                    </linearGradient>
+                                                    <filter id="filter0_d_343_121520" width="6.533" height="5.667"
+                                                        x=".933" y="1.433" color-interpolation-filters="sRGB"
+                                                        filterUnits="userSpaceOnUse">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                                        <feOffset dy="1" />
+                                                        <feColorMatrix
+                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0" />
+                                                        <feBlend in2="BackgroundImageFix"
+                                                            result="effect1_dropShadow_343_121520" />
+                                                        <feBlend in="SourceGraphic" in2="effect1_dropShadow_343_121520"
+                                                            result="shape" />
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+                                            +1
+                                            <svg class="-me-0.5 ms-2 h-4 w-4" aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                                viewBox="0 0 24 24">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7" />
+                                            </svg>
+                                        </button>
+                                        <div id="dropdown-phone-1"
+                                            class="z-10 hidden w-56 divide-y divide-gray-100 rounded-lg bg-white shadow dark:bg-gray-700">
+                                            <ul class="p-2 text-sm font-medium text-gray-700 dark:text-gray-200"
+                                                aria-labelledby="dropdown-phone-button-1">
+                                                <li>
+                                                    <button type="button"
+                                                        class="inline-flex w-full rounded-md px-3 py-2 text-sm text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+                                                        role="menuitem">
+                                                        <span class="inline-flex items-center">
+                                                            <svg fill="none" aria-hidden="true" class="me-2 h-4 w-4"
+                                                                viewBox="0 0 20 15">
+                                                                <rect width="19.6" height="14" y=".5" fill="#fff"
+                                                                    rx="2" />
+                                                                <mask id="a" style="mask-type:luminance" width="20"
+                                                                    height="15" x="0" y="0" maskUnits="userSpaceOnUse">
+                                                                    <rect width="19.6" height="14" y=".5" fill="#fff"
+                                                                        rx="2" />
+                                                                </mask>
+                                                                <g mask="url(#a)">
+                                                                    <path fill="#D02F44" fill-rule="evenodd"
+                                                                        d="M19.6.5H0v.933h19.6V.5zm0 1.867H0V3.3h19.6v-.933zM0 4.233h19.6v.934H0v-.934zM19.6 6.1H0v.933h19.6V6.1zM0 7.967h19.6V8.9H0v-.933zm19.6 1.866H0v.934h19.6v-.934zM0 11.7h19.6v.933H0V11.7zm19.6 1.867H0v.933h19.6v-.933z"
+                                                                        clip-rule="evenodd" />
+                                                                    <path fill="#46467F" d="M0 .5h8.4v6.533H0z" />
+                                                                    <g filter="url(#filter0_d_343_121520)">
+                                                                        <path fill="url(#paint0_linear_343_121520)"
+                                                                            fill-rule="evenodd"
+                                                                            d="M1.867 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.866 0a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM7.467 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zM2.333 3.3a.467.467 0 100-.933.467.467 0 000 .933zm2.334-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.4.467a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm-2.334.466a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.466a.467.467 0 11-.933 0 .467.467 0 01.933 0zM1.4 4.233a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM6.533 4.7a.467.467 0 11-.933 0 .467.467 0 01.933 0zM7 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zM3.267 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0z"
+                                                                            clip-rule="evenodd" />
+                                                                    </g>
+                                                                </g>
+                                                                <defs>
+                                                                    <linearGradient id="paint0_linear_343_121520"
+                                                                        x1=".933" x2=".933" y1="1.433" y2="6.1"
+                                                                        gradientUnits="userSpaceOnUse">
+                                                                        <stop stop-color="#fff" />
+                                                                        <stop offset="1" stop-color="#F0F0F0" />
+                                                                    </linearGradient>
+                                                                    <filter id="filter0_d_343_121520" width="6.533"
+                                                                        height="5.667" x=".933" y="1.433"
+                                                                        color-interpolation-filters="sRGB"
+                                                                        filterUnits="userSpaceOnUse">
+                                                                        <feFlood flood-opacity="0"
+                                                                            result="BackgroundImageFix" />
+                                                                        <feColorMatrix in="SourceAlpha"
+                                                                            result="hardAlpha"
+                                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                                                        <feOffset dy="1" />
+                                                                        <feColorMatrix
+                                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0" />
+                                                                        <feBlend in2="BackgroundImageFix"
+                                                                            result="effect1_dropShadow_343_121520" />
+                                                                        <feBlend in="SourceGraphic"
+                                                                            in2="effect1_dropShadow_343_121520"
+                                                                            result="shape" />
+                                                                    </filter>
+                                                                </defs>
+                                                            </svg>
+                                                            United States (+1)
+                                                        </span>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button type="button"
+                                                        class="inline-flex w-full rounded-md px-3 py-2 text-sm text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+                                                        role="menuitem">
+                                                        <span class="inline-flex items-center">
+                                                            <svg class="me-2 h-4 w-4" fill="none" viewBox="0 0 20 15">
+                                                                <rect width="19.6" height="14" y=".5" fill="#fff"
+                                                                    rx="2" />
+                                                                <mask id="a" style="mask-type:luminance" width="20"
+                                                                    height="15" x="0" y="0" maskUnits="userSpaceOnUse">
+                                                                    <rect width="19.6" height="14" y=".5" fill="#fff"
+                                                                        rx="2" />
+                                                                </mask>
+                                                                <g mask="url(#a)">
+                                                                    <path fill="#0A17A7" d="M0 .5h19.6v14H0z" />
+                                                                    <path fill="#fff" fill-rule="evenodd"
+                                                                        d="M-.898-.842L7.467 4.8V-.433h4.667V4.8l8.364-5.642L21.542.706l-6.614 4.46H19.6v4.667h-4.672l6.614 4.46-1.044 1.549-8.365-5.642v5.233H7.467V10.2l-8.365 5.642-1.043-1.548 6.613-4.46H0V5.166h4.672L-1.941.706-.898-.842z"
+                                                                        clip-rule="evenodd" />
+                                                                    <path stroke="#DB1F35" stroke-linecap="round"
+                                                                        stroke-width=".667"
+                                                                        d="M13.067 4.933L21.933-.9M14.009 10.088l7.947 5.357M5.604 4.917L-2.686-.67M6.503 10.024l-9.189 6.093" />
+                                                                    <path fill="#E6273E" fill-rule="evenodd"
+                                                                        d="M0 8.9h8.4v5.6h2.8V8.9h8.4V6.1h-8.4V.5H8.4v5.6H0v2.8z"
+                                                                        clip-rule="evenodd" />
+                                                                </g>
+                                                            </svg>
+                                                            United Kingdom (+44)
+                                                        </span>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button type="button"
+                                                        class="inline-flex w-full rounded-md px-3 py-2 text-sm text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+                                                        role="menuitem">
+                                                        <span class="inline-flex items-center">
+                                                            <svg class="me-2 h-4 w-4" fill="none" viewBox="0 0 20 15"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <rect width="19.6" height="14" y=".5" fill="#fff"
+                                                                    rx="2" />
+                                                                <mask id="a" style="mask-type:luminance" width="20"
+                                                                    height="15" x="0" y="0" maskUnits="userSpaceOnUse">
+                                                                    <rect width="19.6" height="14" y=".5" fill="#fff"
+                                                                        rx="2" />
+                                                                </mask>
+                                                                <g mask="url(#a)">
+                                                                    <path fill="#0A17A7" d="M0 .5h19.6v14H0z" />
+                                                                    <path fill="#fff" stroke="#fff" stroke-width=".667"
+                                                                        d="M0 .167h-.901l.684.586 3.15 2.7v.609L-.194 6.295l-.14.1v1.24l.51-.319L3.83 5.033h.73L7.7 7.276a.488.488 0 00.601-.767L5.467 4.08v-.608l2.987-2.134a.667.667 0 00.28-.543V-.1l-.51.318L4.57 2.5h-.73L.66.229.572.167H0z" />
+                                                                    <path fill="url(#paint0_linear_374_135177)"
+                                                                        fill-rule="evenodd"
+                                                                        d="M0 2.833V4.7h3.267v2.133c0 .369.298.667.666.667h.534a.667.667 0 00.666-.667V4.7H8.2a.667.667 0 00.667-.667V3.5a.667.667 0 00-.667-.667H5.133V.5H3.267v2.333H0z"
+                                                                        clip-rule="evenodd" />
+                                                                    <path fill="url(#paint1_linear_374_135177)"
+                                                                        fill-rule="evenodd"
+                                                                        d="M0 3.3h3.733V.5h.934v2.8H8.4v.933H4.667v2.8h-.934v-2.8H0V3.3z"
+                                                                        clip-rule="evenodd" />
+                                                                    <path fill="#fff" fill-rule="evenodd"
+                                                                        d="M4.2 11.933l-.823.433.157-.916-.666-.65.92-.133.412-.834.411.834.92.134-.665.649.157.916-.823-.433zm9.8.7l-.66.194.194-.66-.194-.66.66.193.66-.193-.193.66.193.66-.66-.194zm0-8.866l-.66.193.194-.66-.194-.66.66.193.66-.193-.193.66.193.66-.66-.193zm2.8 2.8l-.66.193.193-.66-.193-.66.66.193.66-.193-.193.66.193.66-.66-.193zm-5.6.933l-.66.193.193-.66-.193-.66.66.194.66-.194-.193.66.193.66-.66-.193zm4.2 1.167l-.33.096.096-.33-.096-.33.33.097.33-.097-.097.33.097.33-.33-.096z"
+                                                                        clip-rule="evenodd" />
+                                                                </g>
+                                                                <defs>
+                                                                    <linearGradient id="paint0_linear_374_135177" x1="0"
+                                                                        x2="0" y1=".5" y2="7.5"
+                                                                        gradientUnits="userSpaceOnUse">
+                                                                        <stop stop-color="#fff" />
+                                                                        <stop offset="1" stop-color="#F0F0F0" />
+                                                                    </linearGradient>
+                                                                    <linearGradient id="paint1_linear_374_135177" x1="0"
+                                                                        x2="0" y1=".5" y2="7.033"
+                                                                        gradientUnits="userSpaceOnUse">
+                                                                        <stop stop-color="#FF2E3B" />
+                                                                        <stop offset="1" stop-color="#FC0D1B" />
+                                                                    </linearGradient>
+                                                                </defs>
+                                                            </svg>
+                                                            Australia (+61)
+                                                        </span>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button type="button"
+                                                        class="inline-flex w-full rounded-md px-3 py-2 text-sm text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+                                                        role="menuitem">
+                                                        <span class="inline-flex items-center">
+                                                            <svg class="me-2 h-4 w-4" fill="none" viewBox="0 0 20 15">
+                                                                <rect width="19.6" height="14" y=".5" fill="#fff"
+                                                                    rx="2" />
+                                                                <mask id="a" style="mask-type:luminance" width="20"
+                                                                    height="15" x="0" y="0" maskUnits="userSpaceOnUse">
+                                                                    <rect width="19.6" height="14" y=".5" fill="#fff"
+                                                                        rx="2" />
+                                                                </mask>
+                                                                <g mask="url(#a)">
+                                                                    <path fill="#262626" fill-rule="evenodd"
+                                                                        d="M0 5.167h19.6V.5H0v4.667z"
+                                                                        clip-rule="evenodd" />
+                                                                    <g filter="url(#filter0_d_374_135180)">
+                                                                        <path fill="#F01515" fill-rule="evenodd"
+                                                                            d="M0 9.833h19.6V5.167H0v4.666z"
+                                                                            clip-rule="evenodd" />
+                                                                    </g>
+                                                                    <g filter="url(#filter1_d_374_135180)">
+                                                                        <path fill="#FFD521" fill-rule="evenodd"
+                                                                            d="M0 14.5h19.6V9.833H0V14.5z"
+                                                                            clip-rule="evenodd" />
+                                                                    </g>
+                                                                </g>
+                                                                <defs>
+                                                                    <filter id="filter0_d_374_135180" width="19.6"
+                                                                        height="4.667" x="0" y="5.167"
+                                                                        color-interpolation-filters="sRGB"
+                                                                        filterUnits="userSpaceOnUse">
+                                                                        <feFlood flood-opacity="0"
+                                                                            result="BackgroundImageFix" />
+                                                                        <feColorMatrix in="SourceAlpha"
+                                                                            result="hardAlpha"
+                                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                                                        <feOffset />
+                                                                        <feColorMatrix
+                                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0" />
+                                                                        <feBlend in2="BackgroundImageFix"
+                                                                            result="effect1_dropShadow_374_135180" />
+                                                                        <feBlend in="SourceGraphic"
+                                                                            in2="effect1_dropShadow_374_135180"
+                                                                            result="shape" />
+                                                                    </filter>
+                                                                    <filter id="filter1_d_374_135180" width="19.6"
+                                                                        height="4.667" x="0" y="9.833"
+                                                                        color-interpolation-filters="sRGB"
+                                                                        filterUnits="userSpaceOnUse">
+                                                                        <feFlood flood-opacity="0"
+                                                                            result="BackgroundImageFix" />
+                                                                        <feColorMatrix in="SourceAlpha"
+                                                                            result="hardAlpha"
+                                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                                                        <feOffset />
+                                                                        <feColorMatrix
+                                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0" />
+                                                                        <feBlend in2="BackgroundImageFix"
+                                                                            result="effect1_dropShadow_374_135180" />
+                                                                        <feBlend in="SourceGraphic"
+                                                                            in2="effect1_dropShadow_374_135180"
+                                                                            result="shape" />
+                                                                    </filter>
+                                                                </defs>
+                                                            </svg>
+                                                            Germany (+49)
+                                                        </span>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button type="button"
+                                                        class="inline-flex w-full rounded-md px-3 py-2 text-sm text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+                                                        role="menuitem">
+                                                        <span class="inline-flex items-center">
+                                                            <svg class="me-2 h-4 w-4" fill="none" viewBox="0 0 20 15">
+                                                                <rect width="19.1" height="13.5" x=".25" y=".75"
+                                                                    fill="#fff" stroke="#F5F5F5" stroke-width=".5"
+                                                                    rx="1.75" />
+                                                                <mask id="a" style="mask-type:luminance" width="20"
+                                                                    height="15" x="0" y="0" maskUnits="userSpaceOnUse">
+                                                                    <rect width="19.1" height="13.5" x=".25" y=".75"
+                                                                        fill="#fff" stroke="#fff" stroke-width=".5"
+                                                                        rx="1.75" />
+                                                                </mask>
+                                                                <g mask="url(#a)">
+                                                                    <path fill="#F44653"
+                                                                        d="M13.067.5H19.6v14h-6.533z" />
+                                                                    <path fill="#1035BB" fill-rule="evenodd"
+                                                                        d="M0 14.5h6.533V.5H0v14z"
+                                                                        clip-rule="evenodd" />
+                                                                </g>
+                                                            </svg>
+                                                            France (+33)
+                                                        </span>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button type="button"
+                                                        class="inline-flex w-full rounded-md px-3 py-2 text-sm text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+                                                        role="menuitem">
+                                                        <span class="inline-flex items-center">
+                                                            <svg class="me-2 h-4 w-4" fill="none" viewBox="0 0 20 15">
+                                                                <rect width="19.6" height="14" y=".5" fill="#fff"
+                                                                    rx="2" />
+                                                                <mask id="a" style="mask-type:luminance" width="20"
+                                                                    height="15" x="0" y="0" maskUnits="userSpaceOnUse">
+                                                                    <rect width="19.6" height="14" y=".5" fill="#fff"
+                                                                        rx="2" />
+                                                                </mask>
+                                                                <g mask="url(#a)">
+                                                                    <path fill="#262626" fill-rule="evenodd"
+                                                                        d="M0 5.167h19.6V.5H0v4.667z"
+                                                                        clip-rule="evenodd" />
+                                                                    <g filter="url(#filter0_d_374_135180)">
+                                                                        <path fill="#F01515" fill-rule="evenodd"
+                                                                            d="M0 9.833h19.6V5.167H0v4.666z"
+                                                                            clip-rule="evenodd" />
+                                                                    </g>
+                                                                    <g filter="url(#filter1_d_374_135180)">
+                                                                        <path fill="#FFD521" fill-rule="evenodd"
+                                                                            d="M0 14.5h19.6V9.833H0V14.5z"
+                                                                            clip-rule="evenodd" />
+                                                                    </g>
+                                                                </g>
+                                                                <defs>
+                                                                    <filter id="filter0_d_374_135180" width="19.6"
+                                                                        height="4.667" x="0" y="5.167"
+                                                                        color-interpolation-filters="sRGB"
+                                                                        filterUnits="userSpaceOnUse">
+                                                                        <feFlood flood-opacity="0"
+                                                                            result="BackgroundImageFix" />
+                                                                        <feColorMatrix in="SourceAlpha"
+                                                                            result="hardAlpha"
+                                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                                                        <feOffset />
+                                                                        <feColorMatrix
+                                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0" />
+                                                                        <feBlend in2="BackgroundImageFix"
+                                                                            result="effect1_dropShadow_374_135180" />
+                                                                        <feBlend in="SourceGraphic"
+                                                                            in2="effect1_dropShadow_374_135180"
+                                                                            result="shape" />
+                                                                    </filter>
+                                                                    <filter id="filter1_d_374_135180" width="19.6"
+                                                                        height="4.667" x="0" y="9.833"
+                                                                        color-interpolation-filters="sRGB"
+                                                                        filterUnits="userSpaceOnUse">
+                                                                        <feFlood flood-opacity="0"
+                                                                            result="BackgroundImageFix" />
+                                                                        <feColorMatrix in="SourceAlpha"
+                                                                            result="hardAlpha"
+                                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                                                        <feOffset />
+                                                                        <feColorMatrix
+                                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0" />
+                                                                        <feBlend in2="BackgroundImageFix"
+                                                                            result="effect1_dropShadow_374_135180" />
+                                                                        <feBlend in="SourceGraphic"
+                                                                            in2="effect1_dropShadow_374_135180"
+                                                                            result="shape" />
+                                                                    </filter>
+                                                                </defs>
+                                                            </svg>
+                                                            Germany (+49)
+                                                        </span>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="relative w-full">
+                                            <input type="text" id="phone-input"
+                                                class="z-20 block w-full rounded-e-lg border border-s-0 border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:border-s-gray-700  dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-blue-500"
+                                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"
+                                                required />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sm:col-span-2">
+                                    <label for="address"
+                                        class="mb-2 block text-sm font-medium text-gray-900 dark:text-white"> Shipping
+                                        Address* </label>
+                                    <textarea id="address" rows="4"
+                                        class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+                                        placeholder="Enter here your address"></textarea>
+                                </div>
+
+                                <div>
+                                    <div class="mb-2 flex items-center gap-2">
+                                        <label for="select-country-input"
+                                            class="block text-sm font-medium text-gray-900 dark:text-white"> Country*
+                                        </label>
+                                    </div>
+                                    <select id="select-country-input"
+                                        class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500">
+                                        <option selected>United States</option>
+                                        <option value="AS">Australia</option>
+                                        <option value="FR">France</option>
+                                        <option value="ES">Spain</option>
+                                        <option value="UK">United Kingdom</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <div class="mb-2 flex items-center gap-2">
+                                        <label for="select-city-input"
+                                            class="block text-sm font-medium text-gray-900 dark:text-white"> City*
+                                        </label>
+                                    </div>
+                                    <select id="select-city-input"
+                                        class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500">
+                                        <option selected>San Francisco</option>
+                                        <option value="NY">New York</option>
+                                        <option value="LA">Los Angeles</option>
+                                        <option value="CH">Chicago</option>
+                                        <option value="HU">Houston</option>
+                                    </select>
+                                </div>
+
+                                <div class="flex items-center sm:col-span-2">
+                                    <input id="save-address" type="checkbox" value=""
+                                        class="h-4 w-4 rounded border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600" />
+                                    <label for="save-address"
+                                        class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"> Save the data
+                                        in the address list </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="space-y-4 rounded-lg border border-gray-200 bg-white p-4 shadow-sm dark:border-gray-700 dark:bg-gray-800 sm:p-6">
+                            <p class="text-xl font-semibold text-gray-900 dark:text-white">Delivery address</p>
+
+                            <div class="space-y-4">
+                                <div class="flex items-center">
+                                    <input checked id="same-address" type="radio" value="" name="delivery-address"
+                                        class="h-4 w-4 border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-600 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600" />
+                                    <label for="same-address"
+                                        class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"> Delivery to
+                                        the same address </label>
+                                </div>
+
+                                <div class="flex items-center">
+                                    <input id="another-address" type="radio" value="" name="delivery-address"
+                                        class="h-4 w-4 border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-600 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600" />
+                                    <label for="another-address"
+                                        class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"> Delivery to
+                                        another address </label>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="flex h-5 items-center">
+                                        <input id="store-pickup" aria-describedby="helper-radio-text" type="radio"
+                                            value="" name="delivery-address"
+                                            class="h-4 w-4 border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-600 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600" />
+                                    </div>
+                                    <div class="ms-2 text-sm">
+                                        <label for="store-pickup" class="font-medium text-gray-900 dark:text-gray-300">
+                                            Store pickup </label>
+                                        <p id="helper-radio-text"
+                                            class="text-xs font-normal text-gray-500 dark:text-gray-300">(Choose the
+                                            store from which you want to pick up the products)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="space-y-4 rounded-lg border border-gray-200 bg-white p-4 shadow-sm dark:border-gray-700 dark:bg-gray-800 sm:p-6">
+                            <p class="text-xl font-semibold text-gray-900 dark:text-white">Payment details</p>
+
+                            <div class="space-y-4">
+                                <div class="flex items-center">
+                                    <input checked id="bank-card" type="radio" value="" name="payment-details"
+                                        class="h-4 w-4 border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-600 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600" />
+                                    <label for="bank-card"
+                                        class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"> Online with
+                                        bank card </label>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="flex h-5 items-center">
+                                        <input id="online-installments" aria-describedby="helper-radio-text"
+                                            type="radio" value="" name="payment-details"
+                                            class="h-4 w-4 border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-600 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600" />
+                                    </div>
+                                    <div class="ms-2 text-sm">
+                                        <label for="online-installments"
+                                            class="font-medium text-gray-900 dark:text-gray-300"> Flowbite online
+                                            installments </label>
+                                        <p id="helper-radio-text"
+                                            class="text-xs font-normal text-gray-500 dark:text-gray-300">You have
+                                            interest from 1%/month until January 31, 2024.</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center">
+                                    <input id="star-card" type="radio" value="" name="payment-details"
+                                        class="h-4 w-4 border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-600 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600" />
+                                    <label for="star-card"
+                                        class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"> Online with
+                                        Flowbite STAR Card </label>
+                                </div>
+
+                                <div class="flex items-center">
+                                    <input id="payment-order" type="radio" value="" name="payment-details"
+                                        class="h-4 w-4 border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-600 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600" />
+                                    <label for="payment-order"
+                                        class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"> Payment order
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 min-w-0 flex-1 space-y-6 sm:mt-8 lg:mt-0">
+                        <div class="space-y-4 sm:space-y-6">
+                            <div
+                                class="rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800">
+                                <div
+                                    class="space-y-4 sm:space-y-6 md:flex md:items-center md:justify-between md:gap-6 md:space-y-0">
+                                    <a href="#" class="aspect-square w-20 shrink-0 block">
+                                        <img class="h-full w-full dark:hidden"
+                                            src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/imac-front.svg"
+                                            alt="imac image" />
+                                        <img class="hidden h-full w-full dark:block"
+                                            src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/imac-front-dark.svg"
+                                            alt="imac image" />
+                                    </a>
+
+                                    <div class="w-full min-w-0 flex-1 space-y-4 md:max-w-md ">
+                                        <a href="#"
+                                            class="text-base font-medium text-gray-900 dark:text-white hover:underline">PC
+                                            system All in One APPLE iMac (2023) mqrq3ro/a, Apple M3, 24" Retina 4.5K,
+                                            8GB, SSD 256GB, 10-core GPU, macOS Sonoma, Blue, Keyboard layout INT</a>
+                                    </div>
+
+                                    <div class="flex items-center justify-between gap-4 md:justify-end ">
+                                        <div class="w-8 shrink-0">
+                                            <p class="text-base font-normal text-gray-900 dark:text-white">x1</p>
+                                        </div>
+
+                                        <div class="text-right md:w-32 ">
+                                            <p class="text-base font-bold text-gray-900 dark:text-white">$1,499</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800">
+                                <div
+                                    class="space-y-4 sm:space-y-6 md:flex md:items-center md:justify-between md:gap-6 md:space-y-0">
+                                    <a href="#" class="aspect-square w-20 shrink-0 block">
+                                        <img class="h-full w-full dark:hidden"
+                                            src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/apple-watch-light.svg"
+                                            alt="imac image" />
+                                        <img class="hidden h-full w-full dark:block"
+                                            src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/apple-watch-dark.svg"
+                                            alt="imac image" />
+                                    </a>
+
+                                    <div class="w-full min-w-0 flex-1 space-y-4 md:max-w-md ">
+                                        <a href="#"
+                                            class="text-base font-medium text-gray-900 dark:text-white hover:underline">Restored
+                                            Apple Watch Series 8 (GPS) 41mm Midnight Aluminum Case with Midnight Sport
+                                            Band</a>
+                                    </div>
+
+                                    <div class="flex items-center justify-between gap-4 md:justify-end ">
+                                        <div class="w-8 shrink-0">
+                                            <p class="text-base font-normal text-gray-900 dark:text-white">x2</p>
+                                        </div>
+
+                                        <div class="text-right md:w-32 ">
+                                            <p class="text-base font-bold text-gray-900 dark:text-white">$598</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800">
+                                <div
+                                    class="space-y-4 sm:space-y-6 md:flex md:items-center md:justify-between md:gap-6 md:space-y-0">
+                                    <a href="#" class="aspect-square w-20 shrink-0 block">
+                                        <img class="h-full w-full dark:hidden"
+                                            src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/ps5-light.svg"
+                                            alt="imac image" />
+                                        <img class="hidden h-full w-full dark:block"
+                                            src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/ps5-dark.svg"
+                                            alt="imac image" />
+                                    </a>
+
+                                    <div class="w-full min-w-0 flex-1 space-y-4 md:max-w-md ">
+                                        <a href="#"
+                                            class="text-base font-medium text-gray-900 dark:text-white hover:underline">Sony
+                                            Playstation 5 Digital Edition Console with Extra Blue Controller, White
+                                            PULSE 3D Headset and Surge Dual Controller Charge Dock Bundle</a>
+                                    </div>
+
+                                    <div class="flex items-center justify-between gap-4 md:justify-end ">
+                                        <div class="w-8 shrink-0">
+                                            <p class="text-base font-normal text-gray-900 dark:text-white">x1</p>
+                                        </div>
+
+                                        <div class="text-right md:w-32 ">
+                                            <p class="text-base font-bold text-gray-900 dark:text-white">$799</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800">
+                                <div
+                                    class="space-y-4 sm:space-y-6 md:flex md:items-center md:justify-between md:gap-6 md:space-y-0">
+                                    <a href="#" class="aspect-square w-20 shrink-0 block">
+                                        <img class="h-full w-full dark:hidden"
+                                            src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/xbox-light.svg"
+                                            alt="imac image" />
+                                        <img class="hidden h-full w-full dark:block"
+                                            src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/xbox-dark.svg"
+                                            alt="imac image" />
+                                    </a>
+
+                                    <div class="w-full min-w-0 flex-1 space-y-4 md:max-w-md ">
+                                        <a href="#"
+                                            class="text-base font-medium text-gray-900 dark:text-white hover:underline">Xbox
+                                            Series X Diablo IV Bundle + Xbox Wireless Controller Carbon Black</a>
+                                    </div>
+
+                                    <div class="flex items-center justify-between gap-4 md:justify-end ">
+                                        <div class="w-8 shrink-0">
+                                            <p class="text-base font-normal text-gray-900 dark:text-white">x1</p>
+                                        </div>
+
+                                        <div class="text-right md:w-32 ">
+                                            <p class="text-base font-bold text-gray-900 dark:text-white">$699</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800">
+                                <div
+                                    class="space-y-4 sm:space-y-6 md:flex md:items-center md:justify-between md:gap-6 md:space-y-0">
+                                    <a href="#" class="aspect-square w-20 shrink-0 block">
+                                        <img class="h-full w-full dark:hidden"
+                                            src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/iphone-light.svg"
+                                            alt="imac image" />
+                                        <img class="hidden h-full w-full dark:block"
+                                            src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/iphone-dark.svg"
+                                            alt="imac image" />
+                                    </a>
+
+                                    <div class="w-full min-w-0 flex-1 space-y-4 md:max-w-md">
+                                        <a href="#"
+                                            class="text-base font-medium text-gray-900 dark:text-white hover:underline">Apple
+                                            iPhone 15 5G phone, 256GB, Gold</a>
+                                    </div>
+
+                                    <div class="flex items-center justify-between gap-4 md:justify-end">
+                                        <div class="w-8 shrink-0">
+                                            <p class="text-base font-normal text-gray-900 dark:text-white">x3</p>
+                                        </div>
+
+                                        <div class="text-right md:w-32 ">
+                                            <p class="text-base font-bold text-gray-900 dark:text-white">$2,997</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="space-y-4 rounded-lg border border-gray-200 bg-white p-4 shadow-sm dark:border-gray-700 dark:bg-gray-800 sm:p-6">
+                            <p class="text-xl font-semibold text-gray-900 dark:text-white">Order summary</p>
+
+                            <div class="space-y-4">
+                                <div class="space-y-2">
+                                    <dl class="flex items-center justify-between gap-4">
+                                        <dt class="text-base font-normal text-gray-500 dark:text-gray-400">Original
+                                            price</dt>
+                                        <dd class="text-base font-medium text-gray-900 dark:text-white">$6,592.00</dd>
+                                    </dl>
+
+                                    <dl class="flex items-center justify-between gap-4">
+                                        <dt class="text-base font-normal text-gray-500 dark:text-gray-400">Savings</dt>
+                                        <dd class="text-base font-medium text-green-500">-$299.00</dd>
+                                    </dl>
+
+                                    <dl class="flex items-center justify-between gap-4">
+                                        <dt class="text-base font-normal text-gray-500 dark:text-gray-400">Store Pickup
+                                        </dt>
+                                        <dd class="text-base font-medium text-gray-900 dark:text-white">$99</dd>
+                                    </dl>
+
+                                    <dl class="flex items-center justify-between gap-4">
+                                        <dt class="text-base font-normal text-gray-500 dark:text-gray-400">Tax</dt>
+                                        <dd class="text-base font-medium text-gray-900 dark:text-white">$799</dd>
+                                    </dl>
+                                </div>
+
+                                <dl
+                                    class="flex items-center justify-between gap-4 border-t border-gray-200 pt-2 dark:border-gray-700">
+                                    <dt class="text-base font-bold text-gray-900 dark:text-white">Total</dt>
+                                    <dd class="text-base font-bold text-gray-900 dark:text-white">$7,191.00</dd>
+                                </dl>
+                            </div>
+
+                            <a href="/shopping-summary.html"
+                                class="mb-2 me-2 flex w-full items-center justify-center rounded-lg bg-blue-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Continue
+                                to payment</a>
+
+                            <div class="flex items-center justify-center gap-2">
+                                <span class="text-sm font-normal text-gray-500 dark:text-gray-400"> or </span>
+                                <a href="#" title=""
+                                    class="inline-flex items-center gap-1 text-sm font-medium text-blue-700 underline hover:no-underline dark:text-blue-500">
+                                    Return to Shopping
+                                    <svg class="h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-white antialiased dark:bg-gray-800">
+        <div class="border-b border-gray-100 py-6 dark:border-gray-700 md:py-8">
+            <div class="mx-auto max-w-screen-xl px-4 2xl:px-0">
+                <div class="flex flex-wrap items-center gap-6 sm:justify-between">
+                    <img class="h-8 w-auto dark:hidden lg:h-10"
+                        src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/brand-logos/paypal.svg" alt="" />
+                    <img class="hidden h-8 w-auto dark:block lg:h-10"
+                        src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/brand-logos/paypal-dark.svg" alt="" />
+                    <img class="h-10 w-auto dark:hidden lg:h-11"
+                        src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/brand-logos/stripe.svg" alt="" />
+                    <img class="hidden h-10 w-auto dark:block lg:h-11"
+                        src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/brand-logos/stripe-dark.svg" alt="" />
+                    <img class="h-8 w-auto dark:hidden lg:h-10"
+                        src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/brand-logos/visa.svg" alt="" />
+                    <img class="hidden h-8 w-auto dark:block lg:h-10"
+                        src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/brand-logos/visa-dark.svg" alt="" />
+                    <img class="h-8 w-auto dark:hidden lg:h-10"
+                        src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/brand-logos/mastercard.svg" alt="" />
+                    <img class="hidden h-8 w-auto dark:block lg:h-10"
+                        src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/brand-logos/mastercard-dark.svg"
+                        alt="" />
+                    <img class="h-8 w-auto dark:hidden lg:h-10"
+                        src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/brand-logos/shopify.svg" alt="" />
+                    <img class="hidden h-8 w-auto dark:block lg:h-10"
+                        src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/brand-logos/shopify-dark.svg" alt="" />
+                    <img class="h-8 w-auto dark:hidden lg:h-10"
+                        src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/brand-logos/bank-of-america.svg"
+                        alt="" />
+                    <img class="hidden h-8 w-auto dark:block lg:h-10"
+                        src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/brand-logos/bank-of-america-dark.svg"
+                        alt="" />
+                </div>
+            </div>
+        </div>
+
+        <div class="py-6 sm:py-16 md:py-8">
+            <div class="mx-auto max-w-screen-xl px-4 2xl:px-0">
+                <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:gap-8 lg:grid-cols-4">
+                    <div>
+                        <h6 class="mb-4 text-sm font-semibold uppercase text-gray-900 dark:text-white">Company</h6>
+                        <ul class="space-y-3">
+                            <li>
+                                <a href="#" title=""
+                                    class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                                    About Flowbite Marketplace </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title=""
+                                    class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                                    Careers </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title=""
+                                    class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                                    Flowbite Inc </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title=""
+                                    class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                                    Marketplace & Shipping </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title=""
+                                    class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                                    Our Brands </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title=""
+                                    class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                                    Corporate Sales </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title=""
+                                    class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                                    Tax fees </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title=""
+                                    class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                                    Our Warehouse </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h6 class="mb-4 text-sm font-semibold uppercase text-gray-900 dark:text-white">Payment methods
+                        </h6>
+                        <ul class="space-y-3">
+                            <li>
+                                <a href="#" title=""
+                                    class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                                    Visa & Mastercard </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title=""
+                                    class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                                    Amex Card </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title=""
+                                    class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                                    Platinum Visa & Mastercard </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title=""
+                                    class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                                    Gift Cards </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title=""
+                                    class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                                    Money Store </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title=""
+                                    class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                                    Shop with Points </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title=""
+                                    class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                                    Crypto </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title=""
+                                    class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                                    My Flowbite Credit Card </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h6 class="mb-4 text-sm font-semibold uppercase text-gray-900 dark:text-white">Help center</h6>
+                        <ul class="space-y-3">
+                            <li>
+                                <a href="#" title=""
+                                    class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                                    COVID-19 and Shipping </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title=""
+                                    class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                                    Delivery Rates </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title=""
+                                    class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                                    Discounts </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title=""
+                                    class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                                    Returns & Replacements </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title=""
+                                    class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                                    Recycling </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title=""
+                                    class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                                    Manage your Content </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title=""
+                                    class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                                    Mobile APP </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title=""
+                                    class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                                    Flowbite Assistant </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title=""
+                                    class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                                    Customer Support </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title=""
+                                    class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                                    Accessibility </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h6 class="mb-4 text-sm font-semibold uppercase text-gray-900 dark:text-white">Orders & shipment
+                        </h6>
+                        <ul class="space-y-3">
+                            <li>
+                                <a href="#" title=""
+                                    class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                                    My Account </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title=""
+                                    class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                                    Order Shipment </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title=""
+                                    class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                                    Flowbite Marketplace </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title=""
+                                    class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                                    Financing Methods </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-100 bg-gray-50 py-6 dark:border-gray-600 dark:bg-gray-700 md:py-8">
+            <div class="mx-auto max-w-screen-xl px-4 2xl:px-0">
+                <div class="space-y-4 md:gap-4 lg:flex lg:items-center lg:justify-between lg:space-y-0">
+                    <p class="text-sm text-gray-500 dark:text-gray-400">© 2024 <a href="#"
+                            class="hover:underline">Flowbite</a>, Inc. All rights reserved.</p>
+
+                    <ul
+                        class="flex flex-wrap items-center gap-4 text-sm font-medium text-gray-900 dark:text-white xl:justify-center">
+                        <li>
+                            <a href="#" title="" class="hover:underline"> Conditions of Use & Sale </a>
+                        </li>
+                        <li>
+                            <a href="#" title="" class="hover:underline"> Privacy Notice </a>
+                        </li>
+                        <li>
+                            <a href="#" title="" class="hover:underline"> Cookies Notice </a>
+                        </li>
+                        <li>
+                            <a href="#" title="" class="hover:underline"> Ads Notice </a>
+                        </li>
+                    </ul>
+
+                    <button id="dropdownLanguageButton2" data-dropdown-toggle="dropdownLanguage2"
+                        class=" mt-3 inline-flex shrink-0 items-center text-center text-sm font-medium text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white sm:mt-0"
+                        type="button">
+                        <svg class="me-2 h-5 w-5" viewBox="0 0 21 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.75" y="0.466187" width="20" height="13.3137" rx="2" fill="white" />
+                            <mask id="mask0_3422_20233" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                                width="21" height="14">
+                                <rect x="0.75" y="0.466187" width="20" height="13.3137" rx="2" fill="white" />
+                            </mask>
+                            <g mask="url(#mask0_3422_20233)">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M20.75 0.466187H0.75V1.35377H20.75V0.466187ZM20.75 2.24134H0.75V3.12892H20.75V2.24134ZM0.75 4.0165H20.75V4.90408H0.75V4.0165ZM20.75 5.79166H0.75V6.67924H20.75V5.79166ZM0.75 7.56682H20.75V8.4544H0.75V7.56682ZM20.75 9.34198H0.75V10.2296H20.75V9.34198ZM0.75 11.1171H20.75V12.0047H0.75V11.1171ZM20.75 12.8923H0.75V13.7799H20.75V12.8923Z"
+                                    fill="#D02F44" />
+                                <rect x="0.75" y="0.466187" width="8.57143" height="6.21305" fill="#46467F" />
+                                <g filter="url(#filter0_d_3422_20233)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M2.65477 1.79755C2.65477 2.04265 2.44158 2.24134 2.17858 2.24134C1.91559 2.24134 1.70239 2.04265 1.70239 1.79755C1.70239 1.55245 1.91559 1.35376 2.17858 1.35376C2.44158 1.35376 2.65477 1.55245 2.65477 1.79755ZM4.55954 1.79755C4.55954 2.04265 4.34634 2.24134 4.08334 2.24134C3.82035 2.24134 3.60715 2.04265 3.60715 1.79755C3.60715 1.55245 3.82035 1.35376 4.08334 1.35376C4.34634 1.35376 4.55954 1.55245 4.55954 1.79755ZM5.98811 2.24134C6.2511 2.24134 6.4643 2.04265 6.4643 1.79755C6.4643 1.55245 6.2511 1.35376 5.98811 1.35376C5.72511 1.35376 5.51192 1.55245 5.51192 1.79755C5.51192 2.04265 5.72511 2.24134 5.98811 2.24134ZM8.36906 1.79755C8.36906 2.04265 8.15586 2.24134 7.89287 2.24134C7.62988 2.24134 7.41668 2.04265 7.41668 1.79755C7.41668 1.55245 7.62988 1.35376 7.89287 1.35376C8.15586 1.35376 8.36906 1.55245 8.36906 1.79755ZM3.13096 3.12892C3.39396 3.12892 3.60715 2.93023 3.60715 2.68513C3.60715 2.44003 3.39396 2.24134 3.13096 2.24134C2.86797 2.24134 2.65477 2.44003 2.65477 2.68513C2.65477 2.93023 2.86797 3.12892 3.13096 3.12892ZM5.51192 2.68513C5.51192 2.93023 5.29872 3.12892 5.03573 3.12892C4.77273 3.12892 4.55954 2.93023 4.55954 2.68513C4.55954 2.44003 4.77273 2.24134 5.03573 2.24134C5.29872 2.24134 5.51192 2.44003 5.51192 2.68513ZM6.94049 3.12892C7.20348 3.12892 7.41668 2.93023 7.41668 2.68513C7.41668 2.44003 7.20348 2.24134 6.94049 2.24134C6.6775 2.24134 6.4643 2.44003 6.4643 2.68513C6.4643 2.93023 6.6775 3.12892 6.94049 3.12892ZM8.36906 3.57271C8.36906 3.81781 8.15586 4.0165 7.89287 4.0165C7.62988 4.0165 7.41668 3.81781 7.41668 3.57271C7.41668 3.32761 7.62988 3.12892 7.89287 3.12892C8.15586 3.12892 8.36906 3.32761 8.36906 3.57271ZM5.98811 4.0165C6.2511 4.0165 6.4643 3.81781 6.4643 3.57271C6.4643 3.32761 6.2511 3.12892 5.98811 3.12892C5.72511 3.12892 5.51192 3.32761 5.51192 3.57271C5.51192 3.81781 5.72511 4.0165 5.98811 4.0165ZM4.55954 3.57271C4.55954 3.81781 4.34634 4.0165 4.08334 4.0165C3.82035 4.0165 3.60715 3.81781 3.60715 3.57271C3.60715 3.32761 3.82035 3.12892 4.08334 3.12892C4.34634 3.12892 4.55954 3.32761 4.55954 3.57271ZM2.17858 4.0165C2.44158 4.0165 2.65477 3.81781 2.65477 3.57271C2.65477 3.32761 2.44158 3.12892 2.17858 3.12892C1.91559 3.12892 1.70239 3.32761 1.70239 3.57271C1.70239 3.81781 1.91559 4.0165 2.17858 4.0165ZM3.60715 4.46029C3.60715 4.70538 3.39396 4.90408 3.13096 4.90408C2.86797 4.90408 2.65477 4.70538 2.65477 4.46029C2.65477 4.21519 2.86797 4.0165 3.13096 4.0165C3.39396 4.0165 3.60715 4.21519 3.60715 4.46029ZM5.03573 4.90408C5.29872 4.90408 5.51192 4.70538 5.51192 4.46029C5.51192 4.21519 5.29872 4.0165 5.03573 4.0165C4.77273 4.0165 4.55954 4.21519 4.55954 4.46029C4.55954 4.70538 4.77273 4.90408 5.03573 4.90408ZM7.41668 4.46029C7.41668 4.70538 7.20348 4.90408 6.94049 4.90408C6.6775 4.90408 6.4643 4.70538 6.4643 4.46029C6.4643 4.21519 6.6775 4.0165 6.94049 4.0165C7.20348 4.0165 7.41668 4.21519 7.41668 4.46029ZM7.89287 5.79166C8.15586 5.79166 8.36906 5.59296 8.36906 5.34787C8.36906 5.10277 8.15586 4.90408 7.89287 4.90408C7.62988 4.90408 7.41668 5.10277 7.41668 5.34787C7.41668 5.59296 7.62988 5.79166 7.89287 5.79166ZM6.4643 5.34787C6.4643 5.59296 6.2511 5.79166 5.98811 5.79166C5.72511 5.79166 5.51192 5.59296 5.51192 5.34787C5.51192 5.10277 5.72511 4.90408 5.98811 4.90408C6.2511 4.90408 6.4643 5.10277 6.4643 5.34787ZM4.08334 5.79166C4.34634 5.79166 4.55954 5.59296 4.55954 5.34787C4.55954 5.10277 4.34634 4.90408 4.08334 4.90408C3.82035 4.90408 3.60715 5.10277 3.60715 5.34787C3.60715 5.59296 3.82035 5.79166 4.08334 5.79166ZM2.65477 5.34787C2.65477 5.59296 2.44158 5.79166 2.17858 5.79166C1.91559 5.79166 1.70239 5.59296 1.70239 5.34787C1.70239 5.10277 1.91559 4.90408 2.17858 4.90408C2.44158 4.90408 2.65477 5.10277 2.65477 5.34787Z"
+                                        fill="url(#paint0_linear_3422_20233)" />
+                                </g>
+                            </g>
+                            <defs>
+                                <filter id="filter0_d_3422_20233" x="1.70239" y="1.35376" width="6.66675"
+                                    height="5.43787" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                    <feOffset dy="1" />
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0" />
+                                    <feBlend mode="normal" in2="BackgroundImageFix"
+                                        result="effect1_dropShadow_3422_20233" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3422_20233"
+                                        result="shape" />
+                                </filter>
+                                <linearGradient id="paint0_linear_3422_20233" x1="1.70239" y1="1.35376" x2="1.70239"
+                                    y2="5.79166" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="white" />
+                                    <stop offset="1" stop-color="#F0F0F0" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        English (US)
+                        <svg class="ms-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div id="dropdownLanguage2" data-popper-placement="bottom"
+                        class="z-10 hidden w-44 divide-y divide-gray-100 rounded-lg bg-white shadow dark:bg-gray-700">
+                        <ul class="p-2 text-left text-sm font-medium text-gray-500 dark:text-gray-400">
+                            <li>
+                                <a href="#" title=""
+                                    class="inline-flex w-full items-center rounded-md px-3 py-2 text-sm text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white">
+                                    <img class="me-2 h-auto w-4 shrink-0"
+                                        src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/flags/us.svg" alt="" />
+                                    English (US)
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title=""
+                                    class="inline-flex w-full items-center rounded-md px-3 py-2 text-sm text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white">
+                                    <img class="me-2 h-auto w-4 shrink-0"
+                                        src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/flags/gb.svg" alt="" />
+                                    English (UK)
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title=""
+                                    class="inline-flex w-full items-center rounded-md px-3 py-2 text-sm text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white">
+                                    <img class="me-2 h-auto w-4 shrink-0"
+                                        src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/flags/de.svg" alt="" />
+                                    Deutsch
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title=""
+                                    class="inline-flex w-full items-center rounded-md px-3 py-2 text-sm text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white">
+                                    <img class="me-2 h-auto w-4 shrink-0"
+                                        src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/flags/fr.svg" alt="" />
+                                    Français
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title=""
+                                    class="inline-flex w-full items-center rounded-md px-3 py-2 text-sm text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white">
+                                    <img class="me-2 h-auto w-4 shrink-0"
+                                        src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/flags/jp.svg" alt="" />
+                                    日本語
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title=""
+                                    class="inline-flex w-full items-center rounded-md px-3 py-2 text-sm text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white">
+                                    <img class="me-2 h-auto w-4 shrink-0"
+                                        src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/flags/it.svg" alt="" />
+                                    Italiano
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title=""
+                                    class="inline-flex w-full items-center rounded-md px-3 py-2 text-sm text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white">
+                                    <img class="me-2 h-auto w-4 shrink-0"
+                                        src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/flags/es.svg" alt="" />
+                                    Español
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="flowbite.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
